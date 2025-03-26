@@ -1,0 +1,2 @@
+# Подсчет запущенных процессов wsmprovhost.exe
+$winrm_processes = (Get-Process | Where-Object { $_.ProcessName -eq "wsmprovhost" }).Count
